@@ -1,0 +1,67 @@
+.dropdown a:hover, .dropdown > .dropdown:hover{
+  background-color: #e8e8e8;
+  animation: ease-in-out;
+  transition: 150ms;
+}
+
+.dropdown > .dropdown:hover > span::after{
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown > div{
+  position: relative;
+  display: none;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0px 1px 10px #00000040;
+  gap: 8px;
+  width: max-content;
+}
+
+.dropdown:hover > div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown > .dropdown > div{
+  position: absolute;
+  left: 100%
+}
+
+.dropdown > .dropdown > span{
+  color: #333;
+}
+
+.dropdown > span::after{
+  content: url(../assets/dropdown-arrow-20px.png);
+  position: relative;
+  top: 2px;
+  left: 5px;
+}
+
+.dropdown > .dropdown > span::after{
+  position: relative;
+  top: 2px;
+  left: 5px;
+  content: url(../assets/dropdown-arrow-20px-dark.png) !important;
+  animation: ease-in-out;
+  transition: 200ms;
+}
+
+.dropdown a:visited, .dropdown a:link{
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown a, .dropdown > .dropdown{
+  padding: 10px 10px;
+  border-radius: 8px;
+}

@@ -1,0 +1,37 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.anuncio1, .anuncio2{
+  width: calc(20% - 2rem);
+  padding: 1rem;
+}
+
+.content{
+  width: calc(60% - 2rem);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 1rem;
+}
+
+.coluna{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1 0 300px;
+}
+
+.linha{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.no-margin{
+  margin: 0 0;
+}
