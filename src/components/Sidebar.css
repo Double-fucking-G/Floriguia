@@ -1,0 +1,54 @@
+.sidebar-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -60vw; /* Initially hidden */
+  transition: left 200ms ease-out;
+}
+
+.sidebar-container.active {
+  left: 0; /* Moves into view */
+}
+
+.sidebar-container.active > .sidebar{
+  box-shadow: 0px 0px 8px 6px #00000080;
+}
+
+.sidebar-container:not(.active) > .sidebarButton{
+  box-shadow: 0px 0px 8px 2px #00000080;
+}
+
+.sidebar {
+  width: 60vw;
+  height: 100vh;
+  background-color: #2f347a;
+}
+
+.sidebarButton {
+  display: flex;
+  width: 25px;
+  height: 55px;
+  background-color: #2f347a;
+  border-radius: 0px 10px 10px 0px;
+  position: relative;
+  top: 80vh;
+  cursor: pointer;
+}
+
+.sidebarButton > span {
+  color: #fff;
+  font-size: 35px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.sidebar > h2{
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar > hr{
+  width: 90%;
+  margin: 0 auto;
+  border-color: #e0e0e0;
+}
