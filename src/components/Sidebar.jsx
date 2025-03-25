@@ -24,6 +24,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <h2>Floriguia</h2>
         <hr />
+        
       </div>
       <div className="sidebarButton" onClick={() => setIsOpen(true)}>
         <span>⫶</span>
